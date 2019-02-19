@@ -1,0 +1,19 @@
+body {
+    background-color: #282828;
+    color: #F6F6E8;
+}
+nav {
+    background-color: #404040;
+}
+h1 {
+    color: #404040;
+}
+.card {
+    background-color: #404040;
+}
+.card > h4 {
+    color: #F6F6E8;
+}
+.card > ul > li {
+    background-color: #282828;
+}
