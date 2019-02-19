@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Provider } from "./context";
-import { HashRouter, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
@@ -16,7 +16,7 @@ class App extends Component {
     render() {
         return (
             <Provider>
-                <HashRouter>
+                <BrowserRouter basename={process.env.PUBLIC_URL}>
                     <div className="App">
                         <Header branding="CONTACT MANAGER" />
                         <div className="container">
@@ -29,7 +29,7 @@ class App extends Component {
                             </Switch>
                         </div>
                     </div>
-                </HashRouter>
+                </BrowserRouter>
             </Provider>
         );
     }
